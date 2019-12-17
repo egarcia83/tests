@@ -3,17 +3,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   </head>
   <body>
-    <div class="page">
-      <div id="box" class="white-box">
         <form method="POST" enctype="application/x-www-form-urlencoded" action="authorize">
           <h1>CESCE - Servidor de autorización</h1>
           <p style="text-indent: 0em;">
-            <input type="text" id="input-username" name="username" required="required" />
-            <label for="input-username">Usuario</label>
+            Usuario <input type="text" id="input-username" name="username" required="required" />
           </p>
           <p style="text-indent: 0em;">
-            <input id="input-password" type="password" name="password" required="required" />
-            <label for="input-password">Contraseña</label>
+            Contraseña <input type="password" name="password" required="required" />
           </p>
           <EI-INJECT-HIDDEN-INPUT-FIELDS/>
           <p style="text-indent: 2em;">
@@ -27,7 +23,5 @@
           </EI-LOGINFAILED>
           <EI-INTERNAL-CUSTOM-FORM-ERROR/>
         </form>
-      </div>
-    </div>
   </body>
 </html>
