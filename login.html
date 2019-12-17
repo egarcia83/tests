@@ -2,9 +2,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style>
-      div.double {border-style: double;}
-
-
       body {
       	background-color: #cccccc;
       	padding: 0;
@@ -125,7 +122,6 @@
     <div class="page">
       <div id="box" class="white-box">
         <form method="POST" enctype="application/x-www-form-urlencoded" action="authorize">
-          <div class="double">
           <img class="logo" src="https://raw.githubusercontent.com/egarcia83/tests/master/logo-Cesce_0.png"/>
           <h1>CESCE - Servidor de autorización</h1>
           <div class="inputWrapper">
@@ -138,7 +134,7 @@
               <label for="input-username">Contraseña</label>
             </div>
             <EI-INJECT-HIDDEN-INPUT-FIELDS/>
-          
+
             <button id="login_button" type="submit" name="login" value="true">Acceder</button>
           </div>
           <EI-LOGINFIRSTTIME>
@@ -148,7 +144,6 @@
             <p style="color: red">Credenciales incorrectas. Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
           </EI-LOGINFAILED>
           <EI-INTERNAL-CUSTOM-FORM-ERROR/>
-          </div>
         </form>
       </div>
     </div>
