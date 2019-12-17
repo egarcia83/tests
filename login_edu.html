@@ -128,19 +128,16 @@
           <div class="double">
           <img class="logo" src="https://raw.githubusercontent.com/egarcia83/tests/master/logo-Cesce_0.png"/>
           <h1>CESCE - Servidor de autorización</h1>
-          <div class="inputWrapper">
-            <div class="inputContainer">
-              <input id="input-username" type="text" name="username"  autofocus="autofocus" required="required" autocomplete="off"/>
-              <label for="input-username">Usuario</label>
-            </div>
-            <div class="inputContainer">
-              <input id="input-password" type="password" name="password" required="required" autocomplete="off"/>
-              <label for="input-username">Contraseña</label>
-            </div>
-            <EI-INJECT-HIDDEN-INPUT-FIELDS/>
-          
+          <p style="text-indent: 0em;">
+            Usuario <input type="text" name="username" required="required" />
+          </p>
+          <p style="text-indent: 0em;">
+            Contraseña <input type="password" name="password" required="required" />
+          </p>
+          <EI-INJECT-HIDDEN-INPUT-FIELDS/>
+          <p style="text-indent: 2em;">
             <button id="login_button" type="submit" name="login" value="true">Acceder</button>
-          </div>
+          </p>
           <EI-LOGINFIRSTTIME>
             <p>Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
           </EI-LOGINFIRSTTIME>
