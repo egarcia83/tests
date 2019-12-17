@@ -1,25 +1,31 @@
 <html lang="es" xml:lang="es">
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head>
-  <body>
-    <form method="POST" enctype="application/x-www-form-urlencoded" action="authorize">
-      <h1>Por favor, introduzca sus credenciales</h1>
-      <p>Usuario </p>
-      <p style="text-indent: 0em;"><input type="text" name="username" required="required" /> </p>
-      <p>Contraseña </p>
-      <p style="text-indent: 0em;"><input type="password" name="password" required="required" /> </p>
-      <EI-INJECT-HIDDEN-INPUT-FIELDS/>
-      <p style="text-indent: 2em;"> <button id="login_button" type="submit" name="login" value="true">Log in</button> </p>
-
-      <EI-LOGINFIRSTTIME>
-        <p>Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
-      </EI-LOGINFIRSTTIME>
-
-      <EI-LOGINFAILED>
-        <p style="color: red">Credenciales incorrectas. Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
-      </EI-LOGINFAILED>
-
-      <EI-INTERNAL-CUSTOM-FORM-ERROR/>
-
-    </form>
+  <body class="login">
+    <div class="page">
+      <div id="box" class="white-box">
+        <form method="POST" enctype="application/x-www-form-urlencoded" action="authorize">
+          <h1>CESCE - Servidor de autorización</h1>
+          <p style="text-indent: 0em;">
+            <input type="text" name="username" required="required" />
+            <label for="input-username">Usuario</label>
+          </p>
+          <p style="text-indent: 0em;">
+            <input type="password" name="password" required="required" />
+            <label for="input-password">Contraseña</label>
+          </p>
+          <EI-INJECT-HIDDEN-INPUT-FIELDS/>
+          <p style="text-indent: 2em;">
+            <button id="login_button" type="submit" name="login" value="true">Acceder</button>
+          </p>
+          <EI-LOGINFIRSTTIME>
+            <p>Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
+          </EI-LOGINFIRSTTIME>
+          <EI-LOGINFAILED>
+            <p style="color: red">Credenciales incorrectas. Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
+          </EI-LOGINFAILED>
+          <EI-INTERNAL-CUSTOM-FORM-ERROR/>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
