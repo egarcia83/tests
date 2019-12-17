@@ -1,16 +1,15 @@
-<html lang="es" xml:lang="es">
-  <head><title>Petición de permisos de CESCE</title></head>
+<html lang="en" xml:lang="en">
+  <head><title>Request for permission</title></head>
   <body class="customconsent">
     <div>
-      <div id="box" class="white-box">
+      <div>
         <form method="post" enctype="application/x-www-form-urlencoded" action="authorize">
-          <h1>Petición de permisos de CESCE</h1>
           <AZ-INJECT-HIDDEN-INPUT-FIELDS/>
-          <p><span>Bienvenido </span><b><DISPLAY-RESOURCE-OWNER/></b></p>
-          <p><span>Esta app </span><b><OAUTH-APPLICATION-NAME/></b> desea acceder a tus datos.</p>
+          <p>Greeting...</p><DISPLAY-RESOURCE-OWNER/>
+          <p>This app </p><OAUTH-APPLICATION-NAME/><p> would like to access your data.</p>
           <div>
-            <button class="cancel" type="submit" name="approve" value="false">No, Gracias</button>
-            <button class="submit" type="submit" name="approve" value="true">Permitir Acceso</button>
+            <button class="cancel" type="submit" name="approve" value="false">No Thanks</button>
+            <button class="submit" type="submit" name="approve" value="true">Allow Access</button>
           </div>
         </form>
       </div>

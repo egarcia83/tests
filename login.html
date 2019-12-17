@@ -1,27 +1,26 @@
-<html lang="es" xml:lang="es">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  </head>
+<html lang="en" xml:lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head>
   <body>
-        <form method="POST" enctype="application/x-www-form-urlencoded" action="authorize">
-          <h1>CESCE - Servidor de autorización</h1>
-          <p style="text-indent: 0em;">
-            Usuario <input type="text" id="input-username" name="username" required="required" />
-          </p>
-          <p style="text-indent: 0em;">
-            Contraseña <input type="password" name="password" required="required" />
-          </p>
-          <EI-INJECT-HIDDEN-INPUT-FIELDS/>
-          <p style="text-indent: 2em;">
-            <button id="login_button" type="submit" name="login" value="true">Acceder</button>
-          </p>
-          <EI-LOGINFIRSTTIME>
-            <p>Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
-          </EI-LOGINFIRSTTIME>
-          <EI-LOGINFAILED>
-            <p style="color: red">Credenciales incorrectas. Si ha olvidado su usuario o contraseña, contacte con su administrador del sistema.</p>
-          </EI-LOGINFAILED>
-          <EI-INTERNAL-CUSTOM-FORM-ERROR/>
-        </form>
+    <form method="POST" enctype="application/x-www-form-urlencoded" action="authorize">
+      <h1>Please sign in</h1>
+      <p>Username </p>
+      <p style="text-indent: 0em;"><input type="text" name="username" required="required" /> </p>
+      <p>Password </p>
+      <p style="text-indent: 0em;"><input type="password" name="password" required="required" /> </p>
+      <EI-INJECT-HIDDEN-INPUT-FIELDS/>
+      <p style="text-indent: 2em;"> <button id="login_button" type="submit" name="login" value="true">Log in</button> </p>
+
+      <EI-LOGINFIRSTTIME>
+        <p>If you have forgotten your user name or password, contact your system administrator.</p>
+      </EI-LOGINFIRSTTIME>
+
+      <EI-LOGINFAILED>
+        <p style="color: red">At least entry does not match our records. If you have forgotten your
+        user name or password, contact your system administrator.</p>
+      </EI-LOGINFAILED>
+
+      <EI-INTERNAL-CUSTOM-FORM-ERROR/>
+
+    </form>
   </body>
 </html>
