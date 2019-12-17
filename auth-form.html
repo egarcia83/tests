@@ -1,0 +1,114 @@
+<html lang="en" xml:lang="en">
+    <head>
+        <title>Liberbank</title>
+        <meta http-equiv="Cache-Control" content="no-cache"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Expires" content="-1"/>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css"/>
+        <link rel="SHORTCUT ICON" href="https://svtarqfrt1i:3400/tpps/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://svtarqfrt1i:3400/tpps/authorization/authorizate.css"/>
+        <link rel="stylesheet" type="text/css" href="https://svtarqfrt1i:3400/tpps/bootstrap.css"/>
+    </head>
+    <body class="login">
+        <div class="topdiv">
+            <img class="logo" src="https://svtarqfrt1i:3400/tpps/logolbk.png" />
+        </div>
+        <div class="page">
+            <div class="container">
+                <div class="container">
+                    <div class="container col-md-12">
+                        <div class="row">
+                            <!-- form start -->
+                            <div class="col-md-10">
+                                <p class="accederalbk">Solicitud de Permisos</p>
+                                <span class="acceso">
+                                    <JOES-APPLICATION-NAME/> necesita que le des permisos para acceder a la siguiente información y poder continuar con la operación
+                                </span>
+                            </div>
+                            <div class="col-md-2 ayudame">
+                                <a href="https://svtarqfrt1i:3400/ayuda" class="teayudamos" target="_blank">¿Te ayudamos?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="textToTake" class="losescopes">
+                        <OAUTH-SCOPE/>
+                    </div>
+                    <div class="container correc col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="textToAdd">
+
+							</div>
+                                <form method="POST" enctype="application/x-www-form-urlencoded" action="authorize">
+                                    <div class="form-check peq">
+                                        <input type="checkbox" class="form-check-input" id="checkInput" />
+                                        <label class="form-check-label" for="exampleCheck1">Acepto otorgar permisos de acceso a los datos de mis cuentas</label>
+                                        <!--<label class="form-check-label" for="exampleCheck1">He leído y acepto los <a href="https://svtarqfrt4pu:3400/assets/pdf/terminos.pdf" target="_blank" class="terminos">términos y condiciones</a></label>-->
+
+                                    </div>
+                                    <div class="row botones">
+                                        <AZ-INJECT-HIDDEN-INPUT-FIELDS/>
+                                        <input class="transparent btn btn-primary" type="submit" name="approve" value="Cancelar" />
+                                        <button class="btn btn-primary btnConfirm separado" type="submit" name="approve" value="true" id="login_button">Confirmar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="https://svtarqfrt1i:3400/tpps/authorization/autho.js">
+                        <![CDATA[
+									]]>
+
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <section class="section container">
+            <div class="container foote">
+                <div class="row">
+                    <div class="col-md-9">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <p>
+                                    <a class="nav-link foot" href="https://svtarqfrt1i:3400/assets/pdf/terminos.pdf" target="_blank">Terminos y Condiciones</a>
+                                </p>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link foot" href="https://svtarqfrt1i:3400/avisolegal" target="_blank">Aviso Legal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link foot" href="https://svtarqfrt1i:3400/polcookies" target="_blank">Politica de Cookies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link foot" href="https://svtarqfrt1i:3400/assets/pdf/polprivacida.pdf" target="_blank">Politica de Privacidad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link foot" href="https://svtarqfrt1i:3400/ayuda" target="_blank">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://es-es.facebook.com/liberbank/" target="_blank">
+                            <img src="https://svtarqfrt1i:3400/assets/images/facebook.svg"/>
+                        </a>
+                        <a href="https://www.youtube.com/user/BancoLiberbank">
+                            <img src="https://svtarqfrt1i:3400/assets/images/YT.svg" target="_blank"/>
+                        </a>
+                        <a href="https://twitter.com/liberbank?lang=es" target="_blank">
+                            <img src="https://svtarqfrt1i:3400/assets/images/twitter.svg"/>
+                        </a>
+                        <a href="https://es.linkedin.com/company/liberbank" target="_blank">
+                            <img src="https://svtarqfrt1i:3400/assets/images/linkedin.svg"/>
+                        </a>
+                        <a href="https://plus.google.com/+BancoLiberbank" target="_blank">
+                            <img src="https://svtarqfrt1i:3400/assets/images/google-plus.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
