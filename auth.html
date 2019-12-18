@@ -92,6 +92,12 @@ table {
   border: "0";
   font-size: 12px;
 }
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
     </style>
   </head>
   <body class="login">
@@ -104,13 +110,13 @@ table {
           <img class="logo" src="https://raw.githubusercontent.com/egarcia83/tests/master/logo-Cesce_0.png"/>
           <h1>Petición de permisos de CESCE</h1>
           <AZ-INJECT-HIDDEN-INPUT-FIELDS/>
-          <p><span>Bienvenido </span><b><DISPLAY-RESOURCE-OWNER/></b></p>
-          <p><span>Esta app </span><b><OAUTH-APPLICATION-NAME/></b> desea acceder con los siguientes permisos:</p>
+          <p>Bienvenido <span class="bold"><DISPLAY-RESOURCE-OWNER/></span></p>
+          <p>Esta app <span class="bold"><OAUTH-APPLICATION-NAME/></span> desea acceder con los siguientes permisos:</p>
           <div id="textToTake">
               <OAUTH-SCOPE/>
           </div>
           <p/>
-          <p>Elija <i>Permitir Acceso</i> para conceder el permiso a la petición o <i>No, gracias</i> para rechazar.</p>
+          <p>Elija <span class="italic">Permitir Acceso</span> para conceder el permiso a la petición o <span class="italic">No, gracias</span> para rechazar.</p>
           <div class="buttonBar">
             <button class="cancel" type="submit" name="approve" value="false">No, gracias</button>
             <button class="submit" type="submit" name="approve" value="true">Permitir Acceso</button>
